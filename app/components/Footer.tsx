@@ -1,42 +1,76 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-12">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-slate-900 text-white">
+      {/* Main Footer */}
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Brazilian Business Law</h3>
-            <p className="text-gray-300 mb-4">
-              Providing expert legal guidance for foreign investors and international companies 
-              entering the Brazilian market. Specialized in business formation, compliance, 
-              and ongoing legal support.
+          <div className="lg:col-span-2">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-3 rounded-2xl shadow-lg">
+                <i className="fas fa-scale-balanced text-xl"></i>
+              </div>
+              <div>
+                <div className="font-serif text-2xl font-bold">BrazilLaw Partners</div>
+                <div className="text-slate-400 text-sm font-semibold tracking-wider">INTERNATIONAL LEGAL CONSULTANTS</div>
+              </div>
+            </div>
+            <p className="text-slate-400 leading-relaxed max-w-md">
+              Premier legal consultancy specializing in Brazilian corporate law for 
+              international corporations. Strategic counsel for complex cross-border 
+              transactions and regulatory compliance.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white">Home</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white">Services</a></li>
-              <li><a href="#articles" className="text-gray-300 hover:text-white">Legal Insights</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-white">Contact</a></li>
+            <h4 className="font-serif text-lg font-bold mb-6">Legal Services</h4>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Corporate Formation</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Regulatory Compliance</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Data Protection (LGPD)</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-white transition-colors">Contract Law</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li>Email: contact@brazilianbusinesslaw.com</li>
-              <li>Phone: +55 (11) 99999-9999</li>
-              <li>WhatsApp: +55 (11) 99999-9999</li>
+            <h4 className="font-serif text-lg font-bold mb-6">Contact</h4>
+            <ul className="space-y-4 text-slate-400">
+              <li className="flex items-center gap-3">
+                <i className="fas fa-envelope text-blue-400"></i>
+                contact@brazilianlegal.com
+              </li>
+              <li className="flex items-center gap-3">
+                <i className="fas fa-phone text-blue-400"></i>
+                +55 (11) 99999-9999
+              </li>
+              <li className="flex items-center gap-3">
+                <i className="fab fa-whatsapp text-green-400"></i>
+                +55 (11) 99999-9999
+              </li>
+              <li className="flex items-center gap-3">
+                <i className="fas fa-clock text-amber-400"></i>
+                24/7 Emergency Support
+              </li>
             </ul>
           </div>
         </div>
+      </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Brazilian Business Law. All rights reserved.</p>
+      {/* Bottom Bar */}
+      <div className="border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-slate-500 text-sm">
+              © 2024 Brazilian Legal Partners. All rights reserved.
+            </div>
+            <div className="flex gap-6">
+              <a href="#" className="text-slate-500 hover:text-white transition-colors text-sm">Privacy Policy</a>
+              <a href="#" className="text-slate-500 hover:text-white transition-colors text-sm">Terms of Service</a>
+              <a href="#" className="text-slate-500 hover:text-white transition-colors text-sm">Disclaimer</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
